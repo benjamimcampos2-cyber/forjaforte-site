@@ -1,0 +1,656 @@
+/*
+==================================================
+FORJAFORTE - DASHBOARD.CSS
+Painel Administrativo Front-end
+==================================================
+*/
+
+
+
+/* ==============================================
+   LOGIN ADMINISTRATIVO
+============================================== */
+
+
+.admin-login{
+
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #0B1F3A,
+        #061426
+    );
+
+
+}
+
+
+
+.login-box{
+
+
+    width:400px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.3);
+
+    text-align:center;
+
+
+}
+
+
+
+.login-box h1{
+
+
+    color:#0B1F3A;
+
+    font-family:Poppins,sans-serif;
+
+    font-size:3.5rem;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.login-box p{
+
+
+    color:#5E6773;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.login-box input{
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:
+
+    1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:1.5rem;
+
+
+}
+
+
+
+.login-box button{
+
+
+    width:100%;
+
+    padding:15px;
+
+    background:#F7941D;
+
+    color:#0B1F3A;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    font-size:1.6rem;
+
+
+}
+
+
+
+.login-box button:hover{
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+#login-error{
+
+
+    display:block;
+
+    color:#dc2626;
+
+    margin-top:15px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   PAINEL
+============================================== */
+
+
+.hidden{
+
+
+    display:none!important;
+
+
+}
+
+
+
+.admin-panel{
+
+
+    min-height:100vh;
+
+    background:#f4f6f9;
+
+
+}
+
+
+
+
+
+.admin-header{
+
+
+    height:80px;
+
+    background:#0B1F3A;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+
+}
+
+
+
+.admin-header h2{
+
+
+    font-family:Poppins;
+
+    font-size:2.5rem;
+
+
+}
+
+
+
+.admin-header button{
+
+
+    background:#F7941D;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   CONTAINER
+============================================== */
+
+
+.dashboard-container{
+
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   CARDS
+============================================== */
+
+
+.dashboard-cards{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+.dashboard-card{
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+
+}
+
+
+
+.dashboard-card h3{
+
+
+    color:#F7941D;
+
+    font-size:4rem;
+
+    font-family:Poppins;
+
+
+}
+
+
+
+.dashboard-card p{
+
+
+    color:#5E6773;
+
+    font-size:1.6rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   SEÇÕES
+============================================== */
+
+
+.admin-section{
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    margin-bottom:35px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.05);
+
+
+}
+
+
+
+.admin-section h2{
+
+
+    color:#0B1F3A;
+
+    font-family:Poppins;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   TABELAS
+============================================== */
+
+
+.admin-section table{
+
+
+    width:100%;
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+.admin-section th{
+
+
+    background:#0B1F3A;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:left;
+
+
+}
+
+
+
+.admin-section td{
+
+
+    padding:15px;
+
+    border-bottom:
+
+    1px solid #eee;
+
+
+}
+
+
+
+.admin-section select{
+
+
+    padding:8px;
+
+    border-radius:8px;
+
+
+}
+
+
+
+.admin-section button{
+
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   VAGAS ADMIN
+============================================== */
+
+
+.vaga-admin{
+
+
+    border-left:
+
+    5px solid #F7941D;
+
+    background:#f8fafc;
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+    border-radius:10px;
+
+
+}
+
+
+
+.vaga-admin h3{
+
+
+    color:#0B1F3A;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   MENSAGENS
+============================================== */
+
+
+.mensagem-admin{
+
+
+    padding:20px;
+
+    background:#f8fafc;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.mensagem-admin strong{
+
+
+    color:#0B1F3A;
+
+    font-size:1.7rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   RESPONSIVIDADE
+============================================== */
+
+
+@media(max-width:1000px){
+
+
+
+.dashboard-cards{
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+
+.login-box{
+
+
+    width:90%;
+
+    padding:30px;
+
+
+}
+
+
+
+.admin-header{
+
+
+    padding:0 20px;
+
+
+}
+
+
+
+.admin-header h2{
+
+
+    font-size:1.8rem;
+
+
+}
+
+
+
+.dashboard-cards{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.admin-section{
+
+
+    padding:20px;
+
+    overflow-x:auto;
+
+
+}
+
+
+
+.admin-section table{
+
+
+    min-width:700px;
+
+
+}
+
+
+
+}

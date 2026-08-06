@@ -1,0 +1,706 @@
+/*
+==================================================
+FORJAFORTE - ANIMATIONS.CSS
+Animações e microinterações
+==================================================
+*/
+
+
+
+/* ==============================================
+   PRELOADER
+============================================== */
+
+
+@keyframes loading {
+
+
+    from{
+
+        transform:translateY(0);
+
+        opacity:.5;
+
+    }
+
+
+    to{
+
+        transform:translateY(-15px);
+
+        opacity:1;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   SCROLL INDICATOR
+============================================== */
+
+
+@keyframes scroll {
+
+
+    0%{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+
+    50%{
+
+        transform:translateY(10px);
+
+        opacity:.5;
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   REVEAL ANIMATIONS
+============================================== */
+
+
+.reveal{
+
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+
+    opacity .8s ease,
+
+    transform .8s ease;
+
+
+}
+
+
+
+.reveal.active{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   DELAYS
+============================================== */
+
+
+.delay-1{
+
+
+    transition-delay:.1s;
+
+
+}
+
+
+
+.delay-2{
+
+
+    transition-delay:.2s;
+
+
+}
+
+
+
+.delay-3{
+
+
+    transition-delay:.3s;
+
+
+}
+
+
+
+.delay-4{
+
+
+    transition-delay:.4s;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   FADE IN
+============================================== */
+
+
+.fade-in{
+
+
+    animation:
+
+    fadeIn 1s ease forwards;
+
+
+}
+
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+        opacity:0;
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   SLIDE EFFECTS
+============================================== */
+
+
+.slide-up{
+
+
+    animation:
+
+    slideUp .8s ease forwards;
+
+
+}
+
+
+
+@keyframes slideUp{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+.slide-left{
+
+
+    animation:
+
+    slideLeft .8s ease forwards;
+
+
+}
+
+
+
+@keyframes slideLeft{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.slide-right{
+
+
+    animation:
+
+    slideRight .8s ease forwards;
+
+
+}
+
+
+
+@keyframes slideRight{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   HOVER CARDS
+============================================== */
+
+
+.feature-card,
+.benefit-card,
+.area-card,
+.equipment-card,
+.cert-card,
+.download-card{
+
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease;
+
+
+}
+
+
+
+.feature-card:hover,
+.benefit-card:hover,
+.area-card:hover,
+.equipment-card:hover,
+.cert-card:hover,
+.download-card:hover{
+
+
+    transform:
+
+    translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   BUTTON EFFECT
+============================================== */
+
+
+.btn{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.btn::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    rgba(255,255,255,.25);
+
+    transition:.4s;
+
+
+}
+
+
+
+.btn:hover::before{
+
+
+    left:100%;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   LOGO ANIMATION
+============================================== */
+
+
+.logo-icon{
+
+
+    animation:
+
+    pulseLogo 3s infinite;
+
+
+}
+
+
+
+@keyframes pulseLogo{
+
+
+    0%{
+
+
+        box-shadow:
+
+        0 0 0 0 rgba(247,148,29,.5);
+
+
+    }
+
+
+
+    70%{
+
+
+        box-shadow:
+
+        0 0 0 15px rgba(247,148,29,0);
+
+
+    }
+
+
+
+    100%{
+
+
+        box-shadow:
+
+        0 0 0 0 rgba(247,148,29,0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   FLOAT EFFECT
+============================================== */
+
+
+.float{
+
+
+    animation:
+
+    floating 4s ease-in-out infinite;
+
+
+}
+
+
+
+@keyframes floating{
+
+
+    0%,
+
+    100%{
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+
+    50%{
+
+
+        transform:translateY(-15px);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   IMAGE ZOOM
+============================================== */
+
+
+.zoom-hover{
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.zoom-hover img{
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.zoom-hover:hover img{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   BACK TOP
+============================================== */
+
+
+.back-top{
+
+
+    animation:
+
+    backPulse 2s infinite;
+
+
+}
+
+
+
+@keyframes backPulse{
+
+
+    0%{
+
+
+        transform:scale(1);
+
+
+    }
+
+
+    50%{
+
+
+        transform:scale(1.08);
+
+
+    }
+
+
+    100%{
+
+
+        transform:scale(1);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==============================================
+   REDUÇÃO DE MOVIMENTO
+   ACESSIBILIDADE
+============================================== */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+
+*,
+*::before,
+*::after{
+
+
+    animation-duration:.01ms!important;
+
+    animation-iteration-count:1!important;
+
+    transition-duration:.01ms!important;
+
+    scroll-behavior:auto!important;
+
+
+}
+
+
+}
