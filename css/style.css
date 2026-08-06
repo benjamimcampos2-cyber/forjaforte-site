@@ -289,49 +289,29 @@ justify-content:space-between;
 
 .logo{
 
+    display:flex;
 
-display:flex;
+    align-items:center;
 
-align-items:center;
+    gap:12px;
 
-gap:12px;
+    font-size:22px;
 
-
-font-size:22px;
-
-font-weight:700;
-
+    font-weight:700;
 
 }
 
+.logo-image{
 
+    width:45px;
 
-.logo-icon{
+    height:45px;
 
+    object-fit:contain;
 
-width:45px;
+    display:block;
 
-height:45px;
-
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-
-background:var(--primary);
-
-
-color:white;
-
-
-border-radius:12px;
-
-
-font-weight:800;
-
+    flex-shrink:0;
 
 }
 
