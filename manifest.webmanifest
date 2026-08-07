@@ -1,0 +1,19 @@
+{
+  "name": "ForjaForte | Indústria Metalúrgica",
+  "short_name": "ForjaForte",
+  "description": "Soluções industriais, tecnologia e excelência em produção.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10233d",
+  "theme_color": "#10233d",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+!function(){"use strict";window.addEventListener("load",function(){console.warn("Google Analytics: ID não configurado.")})}();
