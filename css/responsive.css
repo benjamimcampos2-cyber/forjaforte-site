@@ -1178,15 +1178,19 @@ html{
 
         top:80px;
 
-        width:min(86vw, 320px);
+        width:min(86vw, 360px);
 
         height:calc(100dvh - 80px);
+
+        background:var(--white);
 
         padding:28px 24px 36px;
 
         overflow-y:auto;
 
         -webkit-overflow-scrolling:touch;
+
+        box-shadow:-16px 18px 36px rgba(11,18,32,.18);
 
     }
 
@@ -1205,6 +1209,8 @@ html{
 
         min-height:44px;
 
+        color:var(--dark);
+
     }
 
     .nav-button{
@@ -1215,11 +1221,55 @@ html{
 
     .menu-toggle{
 
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        flex-direction:column;
+
+        gap:5px;
+
         min-width:44px;
 
         min-height:44px;
 
         padding:8px;
+
+    }
+
+    .menu-toggle span{
+
+        width:24px;
+
+        height:2px;
+
+        margin:0;
+
+        border-radius:999px;
+
+        transition:transform .25s ease, opacity .2s ease;
+
+        transform-origin:center;
+
+    }
+
+    .menu-toggle.active span:nth-child(1){
+
+        transform:translateY(7px) rotate(45deg);
+
+    }
+
+    .menu-toggle.active span:nth-child(2){
+
+        opacity:0;
+
+    }
+
+    .menu-toggle.active span:nth-child(3){
+
+        transform:translateY(-7px) rotate(-45deg);
 
     }
 
@@ -1263,7 +1313,7 @@ html{
 
         top:75px;
 
-        width:100%;
+        width:min(88vw, 360px);
 
         height:calc(100dvh - 75px);
 
