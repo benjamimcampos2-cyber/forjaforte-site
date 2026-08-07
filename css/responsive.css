@@ -1160,3 +1160,142 @@ html{
 
 
 }
+
+/* ==============================================
+   AJUSTES FINAIS PARA NAVEGAÇÃO EM DISPOSITIVOS MÓVEIS
+============================================== */
+
+@media(max-width:768px){
+
+    html,
+    body{
+
+        overflow-x:clip;
+
+    }
+
+    .nav-menu{
+
+        top:80px;
+
+        width:min(86vw, 320px);
+
+        height:calc(100dvh - 80px);
+
+        padding:28px 24px 36px;
+
+        overflow-y:auto;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+    .nav-menu li,
+    .nav-menu a{
+
+        width:100%;
+
+    }
+
+    .nav-menu a{
+
+        display:flex;
+
+        align-items:center;
+
+        min-height:44px;
+
+    }
+
+    .nav-button{
+
+        justify-content:center;
+
+    }
+
+    .menu-toggle{
+
+        min-width:44px;
+
+        min-height:44px;
+
+        padding:8px;
+
+    }
+
+    .hero{
+
+        padding-top:125px;
+
+        padding-bottom:75px;
+
+    }
+
+    .hero-content{
+
+        padding-top:0;
+
+    }
+
+    .hero-buttons{
+
+        width:100%;
+
+    }
+
+    .hero-buttons .btn{
+
+        max-width:none;
+
+    }
+
+    .experience-card{
+
+        max-width:calc(100% - 20px);
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .nav-menu{
+
+        top:75px;
+
+        width:100%;
+
+        height:calc(100dvh - 75px);
+
+        padding:24px 22px 32px;
+
+    }
+
+    .hero{
+
+        min-height:0;
+
+        padding-top:110px;
+
+        padding-bottom:64px;
+
+    }
+
+    .hero-buttons .btn,
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+
+        min-height:44px;
+
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+
+        font-size:16px;
+
+    }
+
+}
